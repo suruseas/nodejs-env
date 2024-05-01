@@ -12,3 +12,4 @@ services:
     expose:
       - 3000
     tty: true
+    command: bash

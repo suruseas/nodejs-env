@@ -29,4 +29,7 @@ USER vscode
 
 # install Docker tools (cli, buildx, compose)
 COPY --from=gloursdocker/docker / /
+
+RUN echo "alias alias ll='ls -la'" >> ~/.bashrc
+
 CMD [ "npm", "start" ]
